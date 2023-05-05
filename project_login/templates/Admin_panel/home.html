@@ -1,0 +1,24 @@
+{% extends "index.html" %}      
+{% block content %}		
+	{% if user.is_authenticated %}				
+	<div class="container-fluid" style="margin-top:100px;">
+		<div class="col-md-offset-4 col-md-4">
+		<form action="{% url 'Submit'%}" method="GET" autocomplete="off">
+			<h3>Details</h3>
+			<p>1. Enter your Higher Secondary percentage</p>
+			 Ans1 <input type="text" name="Ans1" >
+			<p>2. Enter your Senior Secondary percentage</p>
+			 Ans2 <input type="text" name="Ans2">
+			<p>3. Enter Course Name</p>
+			 Ans3 <input type="text" name="Ans3">
+			<p>4. Enter Major field of Study</p>
+			 Ans4 <input type="text" name="Ans4">
+			{% csrf_token %}
+			<div><button type="submit" class="btn btn-primary">Submit</button></div>
+		</form>
+		</div>
+	</div>  
+	{% else %}
+		<h1>Hi!, Kindly Login</h1>
+	{% endif %}	
+{% endblock %}

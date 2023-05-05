@@ -1,0 +1,40 @@
+
+.navbar{
+    font-family:'Times New Roman', Times, serif;
+    box-shadow:1px 1px 5px black;
+	padding:5px;
+}
+.navbar .navbar-brand{
+    font-size:30px;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar .navbar-brand:hover{
+    font-size:30px;
+    color: white;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: black;
+	font-size:30px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+    color: white;
+	font-size:30px;
+}
+.color{
+	background-color:green;
+	border-color:green;
+}
+h1{
+	position:absolute;
+	top:50%;
+	left:50%;	
+	transform:translate(-50%,-50%);
+}
+.well{
+	box-shadow:2px 2px 15px 0px black;
+}
+
+
